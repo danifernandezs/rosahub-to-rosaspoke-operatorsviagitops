@@ -9,7 +9,7 @@ metadata:
 spec:
   destination:
     namespace: openshift-gitops
-    server: https://api.spoke-03755724.c25t.p1.openshiftapps.com:6443
+    server: https://kubernetes.default.svc
   project: default
   source:
     path: bootstrap
