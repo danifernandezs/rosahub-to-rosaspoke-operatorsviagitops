@@ -19,3 +19,4 @@ spec:
   - kind: Namespace
     jsonPointers:
     - /metadata/labels
+    - /metadata/annotations
