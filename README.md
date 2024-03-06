@@ -1,0 +1,1 @@
+# rosahub-to-rosaspoke-operatorsviagitops
