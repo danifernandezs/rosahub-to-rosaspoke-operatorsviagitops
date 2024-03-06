@@ -15,3 +15,7 @@ spec:
     path: logging-stack
     repoURL: https://github.com/danifernandezs/rosahub-to-rosaspoke-operatorsviagitops.git
     targetRevision: main
+  ignoreDifferences:
+  - group: 
+    kind: Namespace
+    name: openshift-logging
