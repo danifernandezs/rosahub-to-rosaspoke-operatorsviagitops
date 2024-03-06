@@ -1,0 +1,35 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: bgd
+  name: bgd
+  namespace: bgd
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bgd
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: bgd
+    spec:
+      containers:
+      - image: quay.io/redhatworkshops/bgd:latest
+      # - image: quay.io/danielfernandez/kustomize-demo-apps:bgd-latest
+        name: bgd
+        env:
+        - name: COLOR
+          value: "blue"
+        resources: {}
+        securityContext:
+          allowPrivilegeEscalation: false
+          capabilities:
+            drop:
+              - ALL
