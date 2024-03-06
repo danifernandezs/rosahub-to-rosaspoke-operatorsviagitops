@@ -15,4 +15,3 @@ spec:
     path: bgd
     repoURL: https://github.com/danifernandezs/rosahub-to-rosaspoke-operatorsviagitops.git
     targetRevision: main
-  syncPolicy: {}
