@@ -18,4 +18,4 @@ spec:
   ignoreDifferences:
   - kind: Namespace
     jsonPointers:
-    - /metadata
+    - /metadata/labels
