@@ -17,3 +17,5 @@ spec:
     targetRevision: main
   ignoreDifferences:
   - kind: Namespace
+    jsonPointers:
+    - /metadata
